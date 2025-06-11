@@ -28,7 +28,7 @@ jobs:
         env:
           NEXT_PUBLIC_API_ENDPOINT: ${{ secrets.NEXT_PUBLIC_API_ENDPOINT }}  
         run: |
-          ccd frontend
+          cd frontend
           npm install
           npm run build -- --output standalone
           npm run test --if-present
